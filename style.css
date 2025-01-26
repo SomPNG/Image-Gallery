@@ -22,10 +22,6 @@
     margin: 20px 0;
     margin-bottom: 20px;
     font-size: 3rem;
-
-    background-image: url(img/headimg.jpg);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
 }
 
 .gallery{
