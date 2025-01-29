@@ -22,20 +22,20 @@
     margin: 20px 0;
     margin-bottom: 20px;
     font-size: 3rem;
-    background-image: url(img/headimg.jpg);
+
+    background-image: url(../img/headimg.jpg);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    background-clip:text;
+    background-clip: text;
 }
 
 .gallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;  
+    display:grid;
+    grid-template-columns: repeat(3,1fr); 
+    gap:1%;
 }
 
 .card{
-    width: 32%;
     position: relative;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -78,4 +78,17 @@
 .card:hover figcaption{
     opacity: 1;
     transform: scale(1.03);
+}
+@media (min-width:430px) and (max-width:854px) {
+    .gallery{
+        grid-template-columns: repeat(2,1fr); 
+        gap:1%;
+    }
+    
+}
+@media screen and (max-width:430px) {
+    .gallery{
+        grid-template-columns: repeat(1,1fr); 
+        gap:1%;
+    }  
 }
